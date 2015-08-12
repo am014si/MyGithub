@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GOHF confirmation mailer</title>
+</head>
+<body style="background:#f4f4f4; margin:0; padding:0;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:602px; margin:auto; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#333333;">
+  <tr>
+    <td style="padding:14px 2px 15px 5px;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="padding-top:2px;"><a href="http://www.magicbricks.com" target="_blank"><img src="http://property.magicbricks.com/mailer/gohf/magicbricks-logo.png" width="190" height="34" alt="Magicbricks logo" /></a></td>
+        <td align="right"><a href="http://gohf.magicbricks.com/" target="_blank"><img src="http://property.magicbricks.com/mailer/gohf/GOHFMailerLog.png" width="57" height="41" alt="India's No. 1  Property Site" /></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style=" border:1px solid #e1e1e1; border-bottom:2px solid #00679c; background:#fff;">
+          <tr>
+            <td style="padding:26px 28px 26px 26px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="padding-bottom:10px;">
+                    <p style="margin:0px; padding:0px 0 0; font-size:14px; line-height:24px;">Thank you $userName for showing interest in $projectTitle. Your details will be shared with the Builder He will get back to you. </p>
+                    <p style="font-size:14px;margin-top: 5px;margin-bottom: 0px;">Or</p>
+                    <p style="font-size:14px;margin-top: 5px;">you may contact the builder now</p>
+                </td>
+              </tr>
+              <tr>
+              	<td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-bottom: 5px;">
+                    	<tr>
+                            <td style="font-size:16px; font-weight:bold;">
+                                Builder Details
+                            </td>
+                        </tr>                      
+                  </table>
+              	</td>
+              </tr>  
+              <tr>
+                <td>
+                <table border="1" bordercolor="#cccccc" width="100%" cellspacing="0" cellpadding="11" style="border-collapse:collapse;margin-top: 5px;">
+                      <tr>
+                        <td width="24%" align="right" valign="top" style="padding-right:20px; background:#f0f0f0;padding-left: 2px; white-space:nowrap;">Contact Person</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f0f0f0;">$developerName</td>
+                      </tr>
+                      <tr>
+                        <td align="right" valign="top" style="padding-right:20px; background:#f8f8f8;">Mobile</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f8f8f8;">$developerMobile</td>
+                      </tr>
+                      <tr>
+                        <td align="right" valign="top" style="padding-right:20px; background:#f0f0f0;">Company</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f0f0f0;">$title</td>
+                      </tr>
+                 </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-size:16px; padding:28px 0 11px; font-weight:bold;">Offer Details</td>
+              </tr>
+              <tr>
+                <td>
+                	<table border="1" bordercolor="#cccccc" width="100%" cellspacing="0" cellpadding="11" style="border-collapse:collapse;margin-top: 0px;">
+                      <tr>
+                        <td align="right" valign="top" style="padding-right:20px; background:#f8f8f8;">Offer</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f8f8f8;">$offerText</td>
+                      </tr>
+                      
+                 </table>
+
+                </td>
+              </tr>
+              
+            </table>
+            
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+   <tr>
+      <td style="padding:13px 0 0px;">Your Trusted Partner<br />
+        <a href="http://www.magicbricks.com" target="_blank" style="color:#333; text-decoration:none;display: block; margin-top: 3px;">www.magicbricks.com</a>
+        <p style="margin-bottom:0px;margin-top:3px;">For Feedback <a href="http://www.ceoconnect.in/feedback/onlineFeedbackForm.html?siteId=1000&seType=magicbricks.com&from=http%3A//www.magicbricks.com/contactUs" style="color:#333;">click here</a> or Call: <font style="text-decoration:none;color:#333;">0124-4869300</font> (Monday – Saturday)</p>
+        <p style="margin-top:10px;">Follow us on:<img src="http://property.magicbricks.com/mailer/gohf/fbLogo.png" style="vertical-align: middle;margin: 0 10px;" /><img style="vertical-align: middle;margin: 0 10px 0 0;" src="http://property.magicbricks.com/mailer/gohf/twitterLogo.png" /><img style="vertical-align: middle;margin: 0 10px 0 0;" src="http://property.magicbricks.com/mailer/gohf/inLogo.png" /></p>
+        <p style="font-size:11px; color:#999999;margin-bottom: 5px;">All trademarks, logos and names are properties of their respective owners. All Rights Reserved.</p>
+		<p style="font-size:11px; color:#999999;margin-bottom: 5px;margin-top: 0px;">© Copyright 2015 Magicbricks Realty Services Ltd. Times Center, FC6, Film City, Sector 16A, Noida- 201301 India. </p>
+        <p style="color:#333;font-size:11px;margin-top: 0px;"><a href="http://property.magicbricks.com/terms/terms.html" style=" font-size:11px; color:#333;">Terms of Use</a></p>
+      </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+</html>

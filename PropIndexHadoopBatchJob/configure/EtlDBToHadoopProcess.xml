@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch-2.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+	<import resource="MEMORY-JOBREPOSITORY.xml" />
+	<import resource="ApplicationDB.xml" />
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+		scope="singleton" lazy-init="false">
+		<property name="location" value="propIndex.properties" />
+	</bean>
+	
+	<bean id="commentsReaderQuery" class="com.mbbatch.itemreader.CommentsMailerReader">
+	</bean>
+
+	<bean id="flWriter" class="com.mbbatch.itemwriter.FlMailerWriter">
+	</bean>
+	
+	<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor">
+	</bean>
+
+	<bean id="etlDbToHadoopProcess" class="com.mbbatch.itemprocessor.EtlDBToHadoopProcess">
+		<property name="propIndexDaoHibernate" ref="propIndexDaoHibernate"></property>
+	</bean>
+
+
+	<bean id="dynamicJobParameters" class="com.mbbatch.parameter.DynamicJobParameters" />
+
+	<!-- Individual free Listing start -->
+	<batch:job id="etlDBToHadoopJob" restartable="true"
+		job-repository="jobRepository" incrementer="dynamicJobParameters">
+
+		<batch:step id="Freelisting">
+			<batch:tasklet transaction-manager="jobRepository-transactionManager">
+				<batch:chunk reader="commentsReaderQuery" processor="etlDbToHadoopProcess"
+					writer="flWriter" commit-interval="1">
+				</batch:chunk>
+			</batch:tasklet>
+		</batch:step>
+	</batch:job>
+</beans>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<!--
+		Created by the Middlegen Hibernate plugin 2.2
+
+		http://boss.bekk.no/boss/middlegen/ http://www.hibernate.org/
+	-->
+
+	<class name="com.mbbatch.domain.Tpcnd" table="TPCND">
+		<meta attribute="class-description" inherit="false">
+			Master Code and Description Table. Values within a group are sorted based
+			on the sequence number.
+    </meta>
+
+		<id name="cndrfnum" type="java.lang.Long" column="CNDRFNUM">
+			<meta attribute="field-description" inherit="false">
+				this will contain the reference number
+		    </meta>
+
+			<generator class="assigned" />
+		</id>
+
+		<property name="cndcode" type="java.lang.String" column="CNDCODE"
+			not-null="true" length="6" />
+		<property name="cnddesc" type="java.lang.String" column="CNDDESC"
+			not-null="true" length="512" />
+		<property name="cndcndrfnum" type="java.lang.Long" column="CNDCNDRFNUM"
+			length="512" />
+
+		<property name="cndfieldtype" type="java.lang.String" column="CNDFIELDTYPE"
+			length="2" />
+		<property name="cndgroup" type="java.lang.String" column="CNDGROUP"
+			not-null="true" length="128" />
+		<property name="cndseqnum" type="java.lang.Double" column="CNDSEQNUM"
+			not-null="true" length="53" />
+		<property name="createdate" type="java.sql.Timestamp" column="CREATEDATE"
+			not-null="true" length="26" />
+		<property name="createdby" type="java.lang.Long" column="CREATEDBY"
+			not-null="true" length="19" />
+		<property name="deleted" type="java.lang.String" column="DELETED"
+			not-null="true" length="1" />
+		<property name="exfield1" type="java.lang.Long" column="EXFIELD1"
+			length="19" />
+		<property name="exfield2" type="java.lang.String" column="EXFIELD2"
+			length="512" />
+		<property name="isactive" type="java.lang.String" column="ISACTIVE"
+			not-null="true" length="1" />
+		<property name="modidate" type="java.sql.Timestamp" column="MODIDATE"
+			not-null="true" length="26" />
+	</class>
+</hibernate-mapping>

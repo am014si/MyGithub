@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>test</name>
+  <comment>Apache Sqoop. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <projects>
+    <project>sqoop-core</project>
+    <project>sqoop-spi</project>
+    <project>sqoop-common</project>
+    <project>sqoop-client</project>
+    <project>sqoop-execution-mapreduce</project>
+    <project>sqoop-submission-mapreduce</project>
+    <project>sqoop-repository-derby</project>
+    <project>sqoop-connector-generic-jdbc</project>
+    <project>connector-sdk</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

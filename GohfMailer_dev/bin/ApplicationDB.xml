@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"> 
+ 
+<!-- WC AWS DB Server -->
+<!--<bean id="mbdatasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">                  
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />        
+	  <property name="url" value="jdbc:mysql://dbserver.cs7hgtnps9sx.us-east-1.rds.amazonaws.com:3306/db_gohf" />  	     
+	 <property name="maxWait" value="350" />
+	 <property name="maxIdle" value="40" />
+	 <property name="maxActive" value="70" />
+	<property name="username" value="gohf_mb" />                
+	<property name="password" value="8MmcDwPMJX3u5RTR" />   
+</bean>-->
+
+<!-- Google Staging Cloud DB Server 
+<bean id="mbdatasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">                  
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />        
+	  <property name="url" value="jdbc:mysql://10.240.133.95:3306/gohfstagingdb" />  	     
+	 <property name="maxWait" value="350" />
+	 <property name="maxIdle" value="40" />
+	 <property name="maxActive" value="70" />
+	<property name="username" value="gohfstageuser" />                
+	<property name="password" value="St2g39assWd" />   
+</bean>
+-->
+<!-- Google Cloud Live DB Server -->
+<bean id="mbdatasource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">                  
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />        
+	  <property name="url" value="jdbc:mysql://10.240.78.224:3306/gohfstagingdb" />  	     
+	 <property name="maxWait" value="350" />
+	 <property name="maxIdle" value="40" />
+	 <property name="maxActive" value="70" />
+	<property name="username" value="gohfproduser" />                
+	<property name="password" value="Rt2g39assWd" />   
+</bean>
+
+<bean id="smsservice" class="com.mbbatch.sms.SmsService" >
+</bean>
+
+<bean id="mailservice" class="com.mbbatch.mailer.MailService" >
+</bean>
+</beans>
+
+
+

@@ -1,0 +1,530 @@
+PATH:/usr/bin/:/var/jdk1.6.0_23/bin:/opt/apache-ant-1.7.1/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/PHP/bin:/root/bin:/opt/PHP/bin
+  CLASSPATH: .:*.jar:lib/activation.jar:lib/c3p0-0.9.1.2.jar:lib/commons-beanutils.jar:lib/commons-codec-1.3.jar:lib/commons-collections-3.1.jar:lib/commons-collections-3.2.jar:lib/commons-digester-1.8.jar:lib/commons-httpclient-3.1.jar:lib/commons-lang.jar:lib/commons-logging.jar:lib/com.springsource.antlr-2.7.6.jar:lib/com.springsource.com.ibatis-2.3.0.677.jar:lib/com.springsource.com.mysql.jdbc-5.1.6.jar:lib/com.springsource.com.thoughtworks.xstream-1.3.0.jar:lib/com.springsource.javassist-3.3.0.ga.jar:lib/com.springsource.javax.persistence-1.0.0.jar:lib/com.springsource.javax.servlet-2.5.0.jar:lib/com.springsource.javax.transaction-1.1.0.jar:lib/com.springsource.javax.xml.stream-1.0.1.jar:lib/com.springsource.jcifs-1.2.15.jar:lib/com.springsource.net.sf.cglib-2.1.3.jar:lib/com.springsource.net.sourceforge.jtds-1.2.2.jar:lib/com.springsource.oracle.jdbc-10.2.0.2.jar:lib/com.springsource.org.aopalliance-1.0.0.jar:lib/com.springsource.org.apache.commons.collections-3.2.0.jar:lib/com.springsource.org.apache.commons.dbcp-1.2.2.osgi.jar:lib/com.springsource.org.apache.commons.io-1.4.0.jar:lib/com.springsource.org.apache.commons.lang-2.1.0.jar:lib/com.springsource.org.apache.commons.logging-1.1.1.jar:lib/com.springsource.org.apache.commons.pool-1.3.0.jar:lib/com.springsource.org.apache.derby-10.3.2000001.599110.jar:lib/com.springsource.org.apache.log4j-1.2.15.jar:lib/com.springsource.org.apache.ws.commons.schema-1.3.2.jar:lib/com.springsource.org.aspectj.runtime-1.5.4.jar:lib/com.springsource.org.aspectj.weaver-1.5.4.jar:lib/com.springsource.org.codehaus.jettison-1.0.0.jar:lib/com.springsource.org.custommonkey.xmlunit-1.2.0.jar:lib/com.springsource.org.dom4j-1.6.1.jar:lib/com.springsource.org.easymock-2.3.0.jar:lib/com.springsource.org.hibernate-3.2.6.ga.jar:lib/com.springsource.org.hibernate.annotations-3.3.1.ga.jar:lib/com.springsource.org.hibernate.annotations.common-3.3.0.ga.jar:lib/com.springsource.org.hibernate.ejb-3.3.2.GA.jar:lib/com.springsource.org.hsqldb-1.8.0.9.jar:lib/com.springsource.org.jboss.util-2.0.4.GA.jar:lib/com.springsource.org.junit-4.4.0.jar:lib/com.springsource.org.postgresql.jdbc3-8.3.603.jar:lib/com.springsource.org.quartz-1.6.2.jar:lib/com.springsource.org.xmlpull-1.1.3.4-O.jar:lib/db2jcc.jar:lib/db2jcc_license_cisuz.jar:lib/db2jcc_license_cu.jar:lib/hibernate3.jar:lib/httpclient-4.2.3.jar:lib/httpcore-4.2.2.jar:lib/httpmime-4.2.3.jar:lib/jdom.jar:lib/json.jar:lib/kafka_2.8.0-0.8.1.1.jar:lib/lucene-core-2.4.0.jar:lib/mail.jar:lib/noggit-0.5.jar:lib/org.springframework.aop-2.5.6.A.jar:lib/org.springframework.beans-2.5.6.A.jar:lib/org.springframework.context-2.5.6.A.jar:lib/org.springframework.context.support-2.5.6.A.jar:lib/org.springframework.core-2.5.6.A.jar:lib/org.springframework.jdbc-2.5.6.A.jar:lib/org.springframework.orm-2.5.6.A.jar:lib/org.springframework.oxm-1.5.5.A.jar:lib/org.springframework.test-2.5.6.A.jar:lib/org.springframework.transaction-2.5.6.A.jar:lib/org.springframework.web-2.5.6.A.jar:lib/org.springframework.xml-1.5.5.A.jar:lib/poi-3.9-20121203.jar:lib/search-api-1.1.jar:lib/slf4j-api-1.6.6.jar:lib/slf4j-log4j12-1.6.6.jar:lib/solr-solrj-4.3.0.jar:lib/spring-batch-core-2.1.3.RELEASE.jar:lib/spring-batch-infrastructure-2.1.3.RELEASE.jar:lib/spring-beans-2.0.4.jar:lib/spring-modules-validation-0.8.jar:lib/velocity-1.4.jar:bin:config:src:
+  Compiling Plz. wait.. 
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+init:
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+
+compile:
+    [javac] Compiling 37 source files to /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [javac] depend attribute is not supported by the modern compiler
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:71: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] return new sun.misc.BASE64Encoder().encode(enc); }
+    [javac]                    ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:91: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] String encryptedString = new sun.misc.BASE64Encoder().encode(enc);
+    [javac]                                      ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:114: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:140: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 4 warnings
+
+updatehbm:
+     [copy] Copying 4 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/com
+
+updateothers:
+     [copy] Copying 2 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+     [copy] Copying 1 file to /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+	Compilation Process Completed . Now Sending Alerts
+Tue Jan 13 04:55:32 IST 2015
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28DIPAK.SALVE%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28RAHUL.KOSHTI%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+GOT URL RESOURCE......file:/opt/process/LiveAlertApplications/CommentsMailer/bin/searchconfig.xml
+Digester starting to digest config file......
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail rahul.koshti@gmail.com
+Mail going transport 20303
+Mail was sent successfully to rahul.koshti@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28RAJMALHOTRA%40YAY.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail rajmalhotra@yay.com
+Mail going transport 208
+Mail was sent successfully to rajmalhotra@yay.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SAM%40BSNL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sam@bsnl.com
+Mail going transport 8
+Mail was sent successfully to sam@bsnl.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28NRIPESH.CHOUDARY%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail nripesh.choudary@gmail.com
+Mail going transport 8
+Mail was sent successfully to nripesh.choudary@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28THAKKAR.NARENDRA%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28HR.SUR199%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5051095)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail hr.sur199@gmail.com
+Mail going transport 9
+Mail was sent successfully to hr.sur199@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28INFO%40KEYPROPERTY.IN%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail info@keyproperty.in
+Mail going transport 9
+Mail was sent successfully to info@keyproperty.in
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28KISHOREKUMARMB09%40YAHOO.IN%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail kishorekumarmb09@yahoo.in
+Mail going transport 13
+Mail was sent successfully to kishorekumarmb09@yahoo.in
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28BHARATMAX12%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail bharatmax12@gmail.com
+Mail going transport 8
+Mail was sent successfully to bharatmax12@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28CHRISTOPHERRODRIGUES%40YMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail christopherrodrigues@ymail.com
+Mail going transport 8
+Mail was sent successfully to christopherrodrigues@ymail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28LADGIRISH26%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail ladgirish26@gmail.com
+Mail going transport 14
+Mail was sent successfully to ladgirish26@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28MUKESHPATEL6324%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail mukeshpatel6324@gmail.com
+Mail going transport 9
+Mail was sent successfully to mukeshpatel6324@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28REQSONYOU%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail reqsonyou@gmail.com
+Mail going transport 9
+Mail was sent successfully to reqsonyou@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28PK_SINGH87%40REDIFF.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail pk_singh87@rediff.com
+Mail going transport 11
+Mail was sent successfully to pk_singh87@rediff.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SANJU901955%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sanju901955@gmail.com
+Mail going transport 9
+Mail was sent successfully to sanju901955@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28JAHIDALI%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail jahidali@gmail.com
+Mail going transport 8
+Mail was sent successfully to jahidali@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SAMEERVYAS09%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sameervyas09@gmail.com
+Mail going transport 10
+Mail was sent successfully to sameervyas09@gmail.com
+Tue Jan 13 04:56:13 IST 2015
+	Process Executed.........
+PATH:/usr/bin/:/var/jdk1.6.0_23/bin:/opt/apache-ant-1.7.1/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/PHP/bin:/root/bin:/opt/PHP/bin
+  CLASSPATH: .:*.jar:lib/activation.jar:lib/c3p0-0.9.1.2.jar:lib/commons-beanutils.jar:lib/commons-codec-1.3.jar:lib/commons-collections-3.1.jar:lib/commons-collections-3.2.jar:lib/commons-digester-1.8.jar:lib/commons-httpclient-3.1.jar:lib/commons-lang.jar:lib/commons-logging.jar:lib/com.springsource.antlr-2.7.6.jar:lib/com.springsource.com.ibatis-2.3.0.677.jar:lib/com.springsource.com.mysql.jdbc-5.1.6.jar:lib/com.springsource.com.thoughtworks.xstream-1.3.0.jar:lib/com.springsource.javassist-3.3.0.ga.jar:lib/com.springsource.javax.persistence-1.0.0.jar:lib/com.springsource.javax.servlet-2.5.0.jar:lib/com.springsource.javax.transaction-1.1.0.jar:lib/com.springsource.javax.xml.stream-1.0.1.jar:lib/com.springsource.jcifs-1.2.15.jar:lib/com.springsource.net.sf.cglib-2.1.3.jar:lib/com.springsource.net.sourceforge.jtds-1.2.2.jar:lib/com.springsource.oracle.jdbc-10.2.0.2.jar:lib/com.springsource.org.aopalliance-1.0.0.jar:lib/com.springsource.org.apache.commons.collections-3.2.0.jar:lib/com.springsource.org.apache.commons.dbcp-1.2.2.osgi.jar:lib/com.springsource.org.apache.commons.io-1.4.0.jar:lib/com.springsource.org.apache.commons.lang-2.1.0.jar:lib/com.springsource.org.apache.commons.logging-1.1.1.jar:lib/com.springsource.org.apache.commons.pool-1.3.0.jar:lib/com.springsource.org.apache.derby-10.3.2000001.599110.jar:lib/com.springsource.org.apache.log4j-1.2.15.jar:lib/com.springsource.org.apache.ws.commons.schema-1.3.2.jar:lib/com.springsource.org.aspectj.runtime-1.5.4.jar:lib/com.springsource.org.aspectj.weaver-1.5.4.jar:lib/com.springsource.org.codehaus.jettison-1.0.0.jar:lib/com.springsource.org.custommonkey.xmlunit-1.2.0.jar:lib/com.springsource.org.dom4j-1.6.1.jar:lib/com.springsource.org.easymock-2.3.0.jar:lib/com.springsource.org.hibernate-3.2.6.ga.jar:lib/com.springsource.org.hibernate.annotations-3.3.1.ga.jar:lib/com.springsource.org.hibernate.annotations.common-3.3.0.ga.jar:lib/com.springsource.org.hibernate.ejb-3.3.2.GA.jar:lib/com.springsource.org.hsqldb-1.8.0.9.jar:lib/com.springsource.org.jboss.util-2.0.4.GA.jar:lib/com.springsource.org.junit-4.4.0.jar:lib/com.springsource.org.postgresql.jdbc3-8.3.603.jar:lib/com.springsource.org.quartz-1.6.2.jar:lib/com.springsource.org.xmlpull-1.1.3.4-O.jar:lib/db2jcc.jar:lib/db2jcc_license_cisuz.jar:lib/db2jcc_license_cu.jar:lib/hibernate3.jar:lib/httpclient-4.2.3.jar:lib/httpcore-4.2.2.jar:lib/httpmime-4.2.3.jar:lib/jdom.jar:lib/json.jar:lib/kafka_2.8.0-0.8.1.1.jar:lib/lucene-core-2.4.0.jar:lib/mail.jar:lib/noggit-0.5.jar:lib/org.springframework.aop-2.5.6.A.jar:lib/org.springframework.beans-2.5.6.A.jar:lib/org.springframework.context-2.5.6.A.jar:lib/org.springframework.context.support-2.5.6.A.jar:lib/org.springframework.core-2.5.6.A.jar:lib/org.springframework.jdbc-2.5.6.A.jar:lib/org.springframework.orm-2.5.6.A.jar:lib/org.springframework.oxm-1.5.5.A.jar:lib/org.springframework.test-2.5.6.A.jar:lib/org.springframework.transaction-2.5.6.A.jar:lib/org.springframework.web-2.5.6.A.jar:lib/org.springframework.xml-1.5.5.A.jar:lib/poi-3.9-20121203.jar:lib/search-api-1.1.jar:lib/slf4j-api-1.6.6.jar:lib/slf4j-log4j12-1.6.6.jar:lib/solr-solrj-4.3.0.jar:lib/spring-batch-core-2.1.3.RELEASE.jar:lib/spring-batch-infrastructure-2.1.3.RELEASE.jar:lib/spring-beans-2.0.4.jar:lib/spring-modules-validation-0.8.jar:lib/velocity-1.4.jar:bin:config:src:
+  Compiling Plz. wait.. 
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+init:
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+
+compile:
+    [javac] Compiling 37 source files to /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [javac] depend attribute is not supported by the modern compiler
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:71: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] return new sun.misc.BASE64Encoder().encode(enc); }
+    [javac]                    ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:91: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] String encryptedString = new sun.misc.BASE64Encoder().encode(enc);
+    [javac]                                      ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:114: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:140: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 4 warnings
+
+updatehbm:
+     [copy] Copying 4 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/com
+
+updateothers:
+     [copy] Copying 2 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+     [copy] Copying 1 file to /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+	Compilation Process Completed . Now Sending Alerts
+Tue Jan 13 04:57:48 IST 2015
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28DIPAK.SALVE%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28RAHUL.KOSHTI%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+GOT URL RESOURCE......file:/opt/process/LiveAlertApplications/CommentsMailer/bin/searchconfig.xml
+Digester starting to digest config file......
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail rahul.koshti@gmail.com
+Mail going transport 73
+Mail was sent successfully to rahul.koshti@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28RAJMALHOTRA%40YAY.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail rajmalhotra@yay.com
+Mail going transport 12
+Mail was sent successfully to rajmalhotra@yay.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SAM%40BSNL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sam@bsnl.com
+Mail going transport 8
+Mail was sent successfully to sam@bsnl.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28NRIPESH.CHOUDARY%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail nripesh.choudary@gmail.com
+Mail going transport 8
+Mail was sent successfully to nripesh.choudary@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28THAKKAR.NARENDRA%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28HR.SUR199%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5051095)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail hr.sur199@gmail.com
+Mail going transport 8
+Mail was sent successfully to hr.sur199@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28INFO%40KEYPROPERTY.IN%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail info@keyproperty.in
+Mail going transport 8
+Mail was sent successfully to info@keyproperty.in
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28KISHOREKUMARMB09%40YAHOO.IN%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail kishorekumarmb09@yahoo.in
+Mail going transport 9
+Mail was sent successfully to kishorekumarmb09@yahoo.in
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28BHARATMAX12%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail bharatmax12@gmail.com
+Mail going transport 10
+Mail was sent successfully to bharatmax12@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28CHRISTOPHERRODRIGUES%40YMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail christopherrodrigues@ymail.com
+Mail going transport 8
+Mail was sent successfully to christopherrodrigues@ymail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28LADGIRISH26%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail ladgirish26@gmail.com
+Mail going transport 10
+Mail was sent successfully to ladgirish26@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28MUKESHPATEL6324%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : -1
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail mukeshpatel6324@gmail.com
+Mail going transport 9
+Mail was sent successfully to mukeshpatel6324@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28REQSONYOU%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023958)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail reqsonyou@gmail.com
+Mail going transport 9
+Mail was sent successfully to reqsonyou@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28PK_SINGH87%40REDIFF.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail pk_singh87@rediff.com
+Mail going transport 10
+Mail was sent successfully to pk_singh87@rediff.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SANJU901955%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5023443)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sanju901955@gmail.com
+Mail going transport 9
+Mail was sent successfully to sanju901955@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28JAHIDALI%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail jahidali@gmail.com
+Mail going transport 9
+Mail was sent successfully to jahidali@gmail.com
+http://192.168.206.158:8080/MagicBricks/Unsubscribed/select?q=*%3A*&rows=1&fq=email%3A%28SAMEERVYAS09%40GMAIL.COM%29&fq=featureStatus%3A%28N%29
+DOMAIN........projectCompiled
+className ===== com.tbs.search.impl.RemoteSearcher
+cache  http://192.168.206.158:8080/MagicBricks/CompiledProject/select solr  http://192.168.206.158:8080/MagicBricks/CompiledProject/select minCount   1  responseWriter   json
+query string ########   http://192.168.206.158:8080/MagicBricks/CompiledProject/select?q=*:*&fq=psmid:(5038695)&facet=true&facet=true&facet.field=psmid&fl=ctname,psmName,lmtDName&version=2.2&indent=on&start=0&rows=100&facet.mincount=1&wt=json
+getResponseBodyAsString () time : 0
+Collapse info Not Found
+Collapse Count Not Found
+------Total Result found #########: 1
+Mail going to mail sameervyas09@gmail.com
+Mail going transport 11
+Mail was sent successfully to sameervyas09@gmail.com
+Tue Jan 13 04:58:06 IST 2015
+	Process Executed.........
+PATH:/usr/bin/:/var/jdk1.6.0_23/bin:/opt/apache-ant-1.7.1/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/PHP/bin:/root/bin:/opt/PHP/bin
+  CLASSPATH: .:*.jar:lib/activation.jar:lib/c3p0-0.9.1.2.jar:lib/commons-beanutils.jar:lib/commons-codec-1.3.jar:lib/commons-collections-3.1.jar:lib/commons-collections-3.2.jar:lib/commons-digester-1.8.jar:lib/commons-httpclient-3.1.jar:lib/commons-lang.jar:lib/commons-logging.jar:lib/com.springsource.antlr-2.7.6.jar:lib/com.springsource.com.ibatis-2.3.0.677.jar:lib/com.springsource.com.mysql.jdbc-5.1.6.jar:lib/com.springsource.com.thoughtworks.xstream-1.3.0.jar:lib/com.springsource.javassist-3.3.0.ga.jar:lib/com.springsource.javax.persistence-1.0.0.jar:lib/com.springsource.javax.servlet-2.5.0.jar:lib/com.springsource.javax.transaction-1.1.0.jar:lib/com.springsource.javax.xml.stream-1.0.1.jar:lib/com.springsource.jcifs-1.2.15.jar:lib/com.springsource.net.sf.cglib-2.1.3.jar:lib/com.springsource.net.sourceforge.jtds-1.2.2.jar:lib/com.springsource.oracle.jdbc-10.2.0.2.jar:lib/com.springsource.org.aopalliance-1.0.0.jar:lib/com.springsource.org.apache.commons.collections-3.2.0.jar:lib/com.springsource.org.apache.commons.dbcp-1.2.2.osgi.jar:lib/com.springsource.org.apache.commons.io-1.4.0.jar:lib/com.springsource.org.apache.commons.lang-2.1.0.jar:lib/com.springsource.org.apache.commons.logging-1.1.1.jar:lib/com.springsource.org.apache.commons.pool-1.3.0.jar:lib/com.springsource.org.apache.derby-10.3.2000001.599110.jar:lib/com.springsource.org.apache.log4j-1.2.15.jar:lib/com.springsource.org.apache.ws.commons.schema-1.3.2.jar:lib/com.springsource.org.aspectj.runtime-1.5.4.jar:lib/com.springsource.org.aspectj.weaver-1.5.4.jar:lib/com.springsource.org.codehaus.jettison-1.0.0.jar:lib/com.springsource.org.custommonkey.xmlunit-1.2.0.jar:lib/com.springsource.org.dom4j-1.6.1.jar:lib/com.springsource.org.easymock-2.3.0.jar:lib/com.springsource.org.hibernate-3.2.6.ga.jar:lib/com.springsource.org.hibernate.annotations-3.3.1.ga.jar:lib/com.springsource.org.hibernate.annotations.common-3.3.0.ga.jar:lib/com.springsource.org.hibernate.ejb-3.3.2.GA.jar:lib/com.springsource.org.hsqldb-1.8.0.9.jar:lib/com.springsource.org.jboss.util-2.0.4.GA.jar:lib/com.springsource.org.junit-4.4.0.jar:lib/com.springsource.org.postgresql.jdbc3-8.3.603.jar:lib/com.springsource.org.quartz-1.6.2.jar:lib/com.springsource.org.xmlpull-1.1.3.4-O.jar:lib/db2jcc.jar:lib/db2jcc_license_cisuz.jar:lib/db2jcc_license_cu.jar:lib/hibernate3.jar:lib/httpclient-4.2.3.jar:lib/httpcore-4.2.2.jar:lib/httpmime-4.2.3.jar:lib/jdom.jar:lib/json.jar:lib/kafka_2.8.0-0.8.1.1.jar:lib/lucene-core-2.4.0.jar:lib/mail.jar:lib/noggit-0.5.jar:lib/org.springframework.aop-2.5.6.A.jar:lib/org.springframework.beans-2.5.6.A.jar:lib/org.springframework.context-2.5.6.A.jar:lib/org.springframework.context.support-2.5.6.A.jar:lib/org.springframework.core-2.5.6.A.jar:lib/org.springframework.jdbc-2.5.6.A.jar:lib/org.springframework.orm-2.5.6.A.jar:lib/org.springframework.oxm-1.5.5.A.jar:lib/org.springframework.test-2.5.6.A.jar:lib/org.springframework.transaction-2.5.6.A.jar:lib/org.springframework.web-2.5.6.A.jar:lib/org.springframework.xml-1.5.5.A.jar:lib/poi-3.9-20121203.jar:lib/search-api-1.1.jar:lib/slf4j-api-1.6.6.jar:lib/slf4j-log4j12-1.6.6.jar:lib/solr-solrj-4.3.0.jar:lib/spring-batch-core-2.1.3.RELEASE.jar:lib/spring-batch-infrastructure-2.1.3.RELEASE.jar:lib/spring-beans-2.0.4.jar:lib/spring-modules-validation-0.8.jar:lib/velocity-1.4.jar:bin:config:src:
+  Compiling Plz. wait.. 
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+init:
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [mkdir] Created dir: /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+
+compile:
+    [javac] Compiling 37 source files to /opt/process/LiveAlertApplications/CommentsMailer/bin
+    [javac] depend attribute is not supported by the modern compiler
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:71: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] return new sun.misc.BASE64Encoder().encode(enc); }
+    [javac]                    ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:91: warning: sun.misc.BASE64Encoder is Sun proprietary API and may be removed in a future release
+    [javac] String encryptedString = new sun.misc.BASE64Encoder().encode(enc);
+    [javac]                                      ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:114: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] /opt/process/LiveAlertApplications/CommentsMailer/src/com/mbbatch/util/EncDec.java:140: warning: sun.misc.BASE64Decoder is Sun proprietary API and may be removed in a future release
+    [javac] dec = new sun.misc.BASE64Decoder().decodeBuffer(sourceStr);
+    [javac]                   ^
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 4 warnings
+
+updatehbm:
+     [copy] Copying 4 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/com
+
+updateothers:
+     [copy] Copying 2 files to /opt/process/LiveAlertApplications/CommentsMailer/bin/VM
+     [copy] Copying 1 file to /opt/process/LiveAlertApplications/CommentsMailer/bin
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+	Compilation Process Completed . Now Sending Alerts
+Tue Jan 13 05:06:39 IST 2015
+Tue Jan 13 05:06:57 IST 2015
+	Process Executed.........

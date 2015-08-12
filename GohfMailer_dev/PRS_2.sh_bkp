@@ -1,0 +1,18 @@
+#!/bin/sh
+cd /opt/process/LiveAlertApplications/PRS_2.0
+
+JAVA_HOME=/var/jdk1.6.0_23
+PATH=/usr/bin/:$JAVA_HOME/bin:/opt/apache-ant-1.7.1/bin:$PATH
+echo "PATH:$PATH" >> logs/PrsAlert_`date +%m%d%y`.txt
+export PATH JAVA_HOME
+
+CLASSPATH=.:`echo *.jar|tr ' ' ':'`:`echo lib/*.jar|tr ' ' ':'`:`echo bin|tr ' ' ':'`:`echo config|tr ' ' ':'`:`echo src|tr ' ' ':'`:$CLASSPATH
+export CLASSPATH
+echo "  CLASSPATH: $CLASSPATH" >> logs/PrsAlert_`date +%m%d%y`.txt
+echo "  Compiling Plz. wait.. " >> logs/PrsAlert_`date +%m%d%y`.txt
+ant >> logs/PrsAlert_`date +%m%d%y`.txt
+echo "	Compilation Process Completed . Now Sending Alerts" >> logs/PrsAlert_`date +%m%d%y`.txt
+date >> logs/PrsAlert_`date +%m%d%y`.txt
+$JAVA_HOME/bin/java -server -d64 -Xms2048m -Xmx2048m -XX:ParallelGCThreads=4 org.springframework.batch.core.launch.support.CommandLineJobRunner PrsMailer.xml PRS_Sendmailer >> logs/PrsAlert_`date +%m%d%y`.txt
+date >> logs/PrsAlert_`date +%m%d%y`.txt
+echo "	Process Executed........." >> logs/PrsAlert_`date +%m%d%y`.txt

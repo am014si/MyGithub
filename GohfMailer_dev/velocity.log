@@ -1,0 +1,89 @@
+2015-07-03 16:26:26,972 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2015-07-03 16:26:26,973 - ************************************************************** 
+2015-07-03 16:26:26,973 - Starting Jakarta Velocity v1.4
+2015-07-03 16:26:26,973 - RuntimeInstance initializing.
+2015-07-03 16:26:26,973 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2015-07-03 16:26:26,973 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+2015-07-03 16:26:26,973 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogSystem or necessary supporting classes in classpath. Exception : java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+2015-07-03 16:26:26,973 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2015-07-03 16:26:26,973 - Using logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2015-07-03 16:26:26,977 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2015-07-03 16:26:26,981 - Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:26,981 - ClasspathResourceLoader : initialization starting.
+2015-07-03 16:26:26,981 - ClasspathResourceLoader : initialization complete.
+2015-07-03 16:26:26,982 - ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2015-07-03 16:26:26,982 - Default ResourceManager initialization complete.
+2015-07-03 16:26:26,984 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2015-07-03 16:26:26,986 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2015-07-03 16:26:26,988 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2015-07-03 16:26:26,990 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2015-07-03 16:26:26,991 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2015-07-03 16:26:27,022 - Created: 20 parsers.
+2015-07-03 16:26:27,028 - Velocimacro : initialization starting.
+2015-07-03 16:26:27,028 - Velocimacro : adding VMs from VM library template : VM_global_library.vm
+2015-07-03 16:26:27,030 - ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
+2015-07-03 16:26:27,030 - Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
+2015-07-03 16:26:27,030 - Velocimacro :  VM library template macro registration complete.
+2015-07-03 16:26:27,030 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2015-07-03 16:26:27,030 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2015-07-03 16:26:27,030 - Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+2015-07-03 16:26:27,030 - Velocimacro : messages on  : VM system will output logging messages
+2015-07-03 16:26:27,030 - Velocimacro : autoload off  : VM system will not automatically reload global library macros
+2015-07-03 16:26:27,030 - Velocimacro : initialization complete.
+2015-07-03 16:26:27,030 - Velocity successfully started.
+2015-07-03 16:26:27,157 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,162 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,163 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,162 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,163 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,162 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,160 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,163 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,166 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:27,173 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:48,692 - ResourceManager : found VM/GOHF_booking_mailer_to_developer.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:26:49,896 - ResourceManager : found VM/GOHF_booking_mailer_to_developer.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,157 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2015-07-03 16:28:38,158 - ************************************************************** 
+2015-07-03 16:28:38,158 - Starting Jakarta Velocity v1.4
+2015-07-03 16:28:38,158 - RuntimeInstance initializing.
+2015-07-03 16:28:38,158 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2015-07-03 16:28:38,158 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+2015-07-03 16:28:38,158 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogSystem or necessary supporting classes in classpath. Exception : java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+2015-07-03 16:28:38,158 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2015-07-03 16:28:38,158 - Using logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2015-07-03 16:28:38,163 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2015-07-03 16:28:38,167 - Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,167 - ClasspathResourceLoader : initialization starting.
+2015-07-03 16:28:38,167 - ClasspathResourceLoader : initialization complete.
+2015-07-03 16:28:38,168 - ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2015-07-03 16:28:38,168 - Default ResourceManager initialization complete.
+2015-07-03 16:28:38,170 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2015-07-03 16:28:38,173 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2015-07-03 16:28:38,175 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2015-07-03 16:28:38,177 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2015-07-03 16:28:38,178 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2015-07-03 16:28:38,205 - Created: 20 parsers.
+2015-07-03 16:28:38,210 - Velocimacro : initialization starting.
+2015-07-03 16:28:38,211 - Velocimacro : adding VMs from VM library template : VM_global_library.vm
+2015-07-03 16:28:38,212 - ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
+2015-07-03 16:28:38,212 - Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
+2015-07-03 16:28:38,212 - Velocimacro :  VM library template macro registration complete.
+2015-07-03 16:28:38,212 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2015-07-03 16:28:38,212 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2015-07-03 16:28:38,212 - Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+2015-07-03 16:28:38,213 - Velocimacro : messages on  : VM system will output logging messages
+2015-07-03 16:28:38,213 - Velocimacro : autoload off  : VM system will not automatically reload global library macros
+2015-07-03 16:28:38,213 - Velocimacro : initialization complete.
+2015-07-03 16:28:38,213 - Velocity successfully started.
+2015-07-03 16:28:38,243 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,281 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,273 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,272 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,265 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,262 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,254 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,252 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,282 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:28:38,284 - ResourceManager : found VM/GOHF_booking_mailer_to_user.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2015-07-03 16:29:07,336 - ResourceManager : found VM/GOHF_booking_mailer_to_developer.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

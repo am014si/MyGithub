@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GOHF confirmation mailer</title>
+<style type="text/css">
+.termLi li{margin:0px; color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 0 10px 15px;
+  list-style: none;
+  text-align: left;
+  background: url(http://104.155.229.232/assets/images/bullet.png) 0 7px no-repeat;"
+ }
+</style>
+</head>
+<body style="background:#f4f4f4; margin:0; padding:0;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:602px; margin:auto; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#333333;">
+  <tr>
+    <td style="padding:14px 2px 15px 5px;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width: 312px;">
+      <tr>
+        <td style="padding-top:2px;"><a href="http://www.magicbricks.com" target="_blank"><img src="http://property.magicbricks.com/mailer/gohf/magicbricks-logo.png" width="190" height="34" alt="Magicbricks logo" /></a></td>
+        <td align="right"><a href="http://gohf.magicbricks.com/" target="_blank"><img src="http://property.magicbricks.com/mailer/gohf/GOHFMailerLog.png" width="57" height="41" alt="India's No. 1  Property Site" /></td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style=" border:1px solid #e1e1e1; border-bottom:2px solid #00679c; background:#fff;">
+          <tr>
+            <td style="padding:26px 28px 26px 26px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="padding-bottom:23px;">
+                	<p style="margin:0px; padding:0px; font-size:16px; font-weight:bold;">Congratulations $userName,</p>
+                	#if( $freeBieOfferType )
+                    	<p style="margin:0px; padding:3px 0 0; font-size:14px; line-height:24px;">Here is the coupon to $couponOfferText in $projectTitle</p>
+                    #end
+                    #if( $discountedPriceOfferType )
+                    	<p style="margin:0px; padding:3px 0 0; font-size:14px; line-height:24px;">Here is the coupon for discounted price in $projectTitle</p>
+                    #end	
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background:#f4f4f4; border:2px dashed #ad0505; ">
+                  <tr>
+                    <td width="60%" valign="top" style="padding:10px 15px 5px;">
+                    	<p style="margin:0px; padding:0px 0 3px;"><strong style="font-size:18px;">$unitBHKType</strong> <font style="font-size:16px;">($unitArea)</font></p>
+                    	<p style="margin:0px; padding:0px; line-height:24px;">$projectTitle</p>
+                        <p style="margin:0px; padding:0px 0 3px; line-height:24px;">$projectAddress</p>
+                    </td>
+                    <td valign="top">&nbsp;</td>
+                    <td width="40%" valign="top" style="padding:10px 15px 5px; font-size:18px;">
+                    #if( $discountedPriceOfferType )
+					<div>
+                    <font>Price:</font><font><img src="http://property.magicbricks.com/mailer/gohf/rsIcon.png" width="11" height="15" alt="Rs." style="vertical-align:inherit; padding:0 4px;" /></font>$unitPrice
+					<p style="padding:0; margin:0;">
+					<font>Offer Price:</font><font><img src="http://property.magicbricks.com/mailer/gohf/rsIcon.png" width="11" height="15" alt="Rs." style="vertical-align:inherit; padding:0 4px;" /></font><strong>$offerPrice</strong>
+					</p>
+					</div>
+					#end
+					#if( $freeBieOfferType )
+					<div>
+                    <p style="padding:0; margin:10px 0 0 0;">
+					<font>Price:</font><font><img src="http://property.magicbricks.com/mailer/gohf/rsIcon.png" width="11" height="15" alt="Rs." style="vertical-align:inherit; padding:0 4px;" /></font><strong>$unitPrice</strong>
+					</p>
+					</div>
+					#end
+					</td>
+                  </tr>
+				  
+				#if( $discountedPriceOfferType )  
+				<tr>
+					<td></td>
+					<td></td>
+					<td>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td valign="top" style=""></td>
+								<td valign="top" style=""></td>
+								<td valign="top" style=" font-size:16px; color:#fff;">
+									<table width="152" height="52" cellspacing="0" cellpadding="0" border="0" align="right" style="background:url(http://property.magicbricks.com/mailer/gohf/bookingAmBg.png) no-repeat;text-align: center">
+										<tbody><tr>
+											<td>
+											<p style="margin:0px; padding:0px; font-size:14px;">Coupon code</p>
+											<p style="margin:0px; padding:0px; font-size:20px; font-weight: bold;">$couponCode</p>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+						   </tr>
+						</table>	
+					</td>
+				</tr>
+				#end  
+				  
+				  #if( $freeBieOfferType )
+                  <tr>
+                    <td valign="top" style="padding: 17px 2px 1px; text-align: center; background:#f8ba17; font-size:16px; border-top:1px solid #dd9619;">
+                    <p style="margin:0px; padding:0px 0 3px;">$couponOfferText</p>
+                    </td>
+                    <td valign="top" style="background:#f8ba17; vertical-align:middle;"><img src="http://property.magicbricks.com/mailer/gohf/arrowOrange.gif" width="13" height="52" alt="Arrow image" /></td>
+                    <td valign="top" style="padding: 7px 2px 1px; background:#d94d3e; font-size:16px; border-top:1px solid #dd9619; color:#fff;">
+                    	<p style="margin:0px; padding:0px; font-size:12px;">Coupon code</p>
+                        <p style="margin:0px; padding:0px; font-size:20px; font-weight:bold;">$couponCode</p>
+                    </td>
+                   </tr>
+                   #end
+                </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="font-size:12px; padding:8px 0;">You can now use this coupon to book your dream home. This coupon is genereated for the above property only</td>
+              </tr>
+              <tr>
+                <td style="font-size:16px; padding:18px 0 11px; font-weight:bold;">Builder Information</td>
+              </tr>
+              <tr>
+                <td>
+                	<table border="1" bordercolor="#cccccc" width="" cellspacing="0" cellpadding="11" style="border-collapse:collapse;min-width: 260px;">
+                      <tr>
+                        <td width="" align="right" valign="top" style="padding-right:10px; background:#f0f0f0;">Company</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f0f0f0;min-width: 140px;">$developerCompanyName</td>
+                      </tr>
+                      <tr>
+                        <td align="right" valign="top" style="padding-right:10px; background:#f8f8f8;">Contact Person</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f8f8f8;">$projectUserName</td>
+                      </tr>
+                      <tr>
+                        <td align="right" valign="top" style="padding-right:10px; background:#f0f0f0;">Mobile</td>
+                        <td valign="top" style="padding-left:10px; font-weight:bold; background:#f0f0f0;">$projectUserMobile</td>
+                      </tr>
+                    </table>
+
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <p style="font-size:16px; margin:0px; padding:27px 0 5px; font-weight:bold;">Next Steps</p>
+                <p style="margin:0px;">$nextSteps</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <p style="font-size:16px; margin:0px; padding:27px 0 5px; font-weight:bold;">Terms & Conditions</p>
+                <ul class="termLi" style="margin:0; padding:0px 0 0 0px; font-size:12px; list-style-image:url(http://property.magicbricks.com/mailer/gohf/greyArrow.png); line-height:23px;">
+                $termsAndConditions
+                </ul>
+                </td>
+              </tr>
+            </table>
+
+            
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+      <td style="padding:13px 0 0px;">Your Trusted Partner<br />
+        <a href="http://www.magicbricks.com" target="_blank" style="color:#333; text-decoration:none;display: block; margin-top: 3px;">www.magicbricks.com</a>
+        <p style="margin-bottom:0px;margin-top:3px;">For Feedback <a href="http://www.ceoconnect.in/feedback/onlineFeedbackForm.html?siteId=1000&seType=magicbricks.com&from=http%3A//www.magicbricks.com/contactUs" style="color:#333;">click here</a> or Call: <font style="text-decoration:none;color:#333;">0124-4869300</font> (Monday – Saturday)</p>
+        <p style="margin-top:10px;">Follow us on:<img src="http://property.magicbricks.com/mailer/gohf/fbLogo.png" style="vertical-align: middle;margin: 0 10px;" /><img style="vertical-align: middle;margin: 0 10px 0 0;" src="http://property.magicbricks.com/mailer/gohf/twitterLogo.png" /><img style="vertical-align: middle;margin: 0 10px 0 0;" src="http://property.magicbricks.com/mailer/gohf/inLogo.png" /></p>
+        <p style="font-size:11px; color:#999999;margin-bottom: 5px;">All trademarks, logos and names are properties of their respective owners. All Rights Reserved.</p>
+		<p style="font-size:11px; color:#999999;margin-bottom: 5px;margin-top: 0px;">© Copyright 2015 Magicbricks Realty Services Ltd. Times Center, FC6, Film City, Sector 16A, Noida- 201301 India. </p>
+        <p style="color:#333;font-size:11px;margin-top: 0px;"><a href="http://property.magicbricks.com/terms/terms.html" style=" font-size:11px; color:#333;">Terms of Use</a></p>
+      </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</body>
+</html>

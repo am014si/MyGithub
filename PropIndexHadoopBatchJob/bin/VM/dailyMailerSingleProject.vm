@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Project Discussion</title>
+</head>
+
+<body style="background:#efefef;">
+<!-- main table 1 starts -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:606px; margin:auto; color:#545454; background:#efefef; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:37px 0 0 0;">
+    <tr>
+    <td valign="top" style="padding-top:11px; padding-left:20px; background:#efefef;">
+            <a target="_blank" style="text-decoration: none; color: #000000;" href="http://www.magicbricks.com"><img  style="border:none;" src="http://cdn.staticmb.com/images/mailer/mbLogo_alert.png" width="190" height="34" alt="Magicbricks" />
+            </a></td>
+  </tr>
+          
+  	<tr>
+    <td>
+    <!-- main table 2 starts -->
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #d5d8d9; background:#fff;border-top:2px solid #13aee7; padding: 0px 0px 20px 0px; margin-top:5px;">
+        <tr style="font-family:Arial, Helvetica, sans-serif;">
+        <td style="padding:26px 30px 15px 30px;">
+        <!-- main table 3 starts -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="" >
+        <tr>
+        <td>
+            <table>
+            <tr style="font-family:Arial, Helvetica, sans-serif;">
+            <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666;" width="85%">
+            <p style="margin:0px; padding-bottom:7px; max-width: 465px;word-wrap: break-word; ">Dear $userWithProject.name,</p>
+            <p style="margin-top:0px; padding-bottom:0px;max-width: 465px;word-wrap: break-word;">Please find new comments on $proj.projectName.</p>
+            <p style="padding-top:3px;max-width: 465px;word-wrap: break-word;"><font style="font-size:23px; font-weight:bold;">$proj.projectName - Discussion Updates</font><br/>$proj.localityName, $proj.cityName</p>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+        
+        #foreach( $parentComment in $proj.commentsMap.parentsComments)
+        
+        <tr>
+        <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f3f3f3;margin-top:10px;">
+        <tr style="font-family:Arial, Helvetica, sans-serif;">
+        <td padding:0 0 0 0;>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#666666; background:#f3f3f3; ">
+            <tr style=" font-family:Arial, Helvetica, sans-serif;">
+            <td style="padding:16px 16px 0 0px;">
+					<table width="100%">
+						<tr>
+							<td style=" vertical-align:top; width:40px; padding:11px 2px 10px 12px;">
+								<table style="">
+									<tbody>
+										<tr>
+											<td style="text-align: center; vertical-align: text-top; font-family: Arial,Helvetica,sans-serif; background: none repeat scroll 0% 0% rgb(198, 198, 198); font-size: 20px; color: rgb(255, 255, 255); padding-top: 5px; width: 35px; height: 30px;">
+											$parentComment.firstCharOfName
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							
+							<td rowspan="2" style=" padding:11px 2px 10px 12px; font-size:13px; color:#666666; line-height:15px; ">
+							<b>$parentComment.name</b><i style=" float:right;font-size:12px; color:#a6a6a6; text-align:right; padding-right:20px;">$parentComment.createDateDisc</i>
+						  <!-- Sub size of parent comment Start-->
+							 #if($parentComment.commnets.length()>200)
+									<p style="word-wrap: break-word;max-width:450px;">$parentComment.commnets.substring(0,200)...
+										<a href="$viewMoreCommentsLinkWithMoreText" target="_blank"  style="color:#5a60cf;">more</a>
+									</p>
+								#else	
+								<p style="word-wrap: break-word;max-width:450px;">$parentComment.commnets</p>
+								#end
+						  <!-- Sub size of parent comment end --> 
+						   
+							
+							</td> 
+							
+				</tr>
+		</table>
+	</td>			                       
+            </tr>
+            <tr>
+            	<td style="height:0px;"></td>
+            </tr>
+            </table> 
+        </td>
+        </tr>
+        <!-- Sub Comments Starts -->
+        #if($proj.commentsMap)
+        #set($cmtMap = $proj.commentsMap)
+        	#foreach($cmtKey in $cmtMap.keySet())
+        		#if($cmtKey == $parentComment.commentsRefnum)
+        			#foreach($commentItem in $cmtMap.get($cmtKey))
+        <tr>
+            <td>
+                <table align="right" width="88%" border="0" cellspacing="0" cellpadding="0" style="  font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#666666; background:#f3f3f3; border-top:1px solid #c6c6c6;">
+                <tr style="font-family:Arial, Helvetica, sans-serif; ">
+                
+				<td style="padding:15px 2px 0px 0px;">
+					<table width="100%">
+						<tr>
+							<td style=" vertical-align:top; width:40px; padding:11px 2px 10px 12px;">
+							<table style="">
+								<tbody>
+									<tr>
+										<td style="text-align: center; vertical-align: text-top; font-family: Arial,Helvetica,sans-serif; background: none repeat scroll 0% 0% rgb(198, 198, 198); font-size: 20px; color: rgb(255, 255, 255); padding-top: 5px; width: 35px; height: 30px;">
+										$commentItem.firstCharOfName
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+							
+							<td rowspan="2" style=" max-width:385px;font-size:13px; padding:11px 2px 10px 12px; color:#666666; ">
+							<b>$commentItem.name</b><i style=" float:right;font-size:12px; color:#a6a6a6; text-align:right; padding-right:20px;">$commentItem.createDateDisc</i>
+							
+							 <!-- Sub size of Sub comment Start-->
+						 #if($commentItem.commnets.length()>200)
+								<p style="margin-top:12px;padding-right:15px; line-height:20px;word-wrap: break-word;max-width:450px;">$commentItem.commnets.substring(0,200)...
+									<a href="$viewMoreCommentsLinkWithMoreText"  target="_blank" style="color:#5a60cf;">more</a>
+								</p>
+							#else	
+							<p style="margin-top:12px;padding-right:15px; line-height:20px;word-wrap: break-word;max-width:450px;">$commentItem.commnets</p>
+							#end
+							 <!-- Sub size of Sub comment end --> 
+							
+							
+							
+							</td>
+                </tr>
+		</table>
+	</td>
+                </tr>
+                <tr>
+	            	<td style="height:0px;"></td>
+	            </tr>
+                </table>
+            </td>
+            </tr>
+            
+            		#end
+            	#end
+            #end	
+         #end
+         
+        <!-- Sub Comments end -->
+        </table>
+   		 </td>
+   		 </tr>
+        #end
+        
+       <!-- New Parent Comment Start--> 
+                    
+            </table>
+        <!-- main table 4 ends -->
+        </td>
+        </tr>   
+        <!-- New Parent Comment End--> 
+        
+        
+       
+        <tr>
+        <td>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" style="margin-top:28px;">
+            <tr style="font-family:Arial, Helvetica, sans-serif; ">
+            <td style=""><a href="$viewMoreCommentsLink" target="_blank" style="background:#c0392b;height:32px;width:262px;vertical-align:middle;border-radius:4px;text-align:center;padding:10px 0px 0px 0px;float:left;text-decoration:none;color:#ffffff;font-family:Arial, Helvetica, sans-serif; font-size:14px;">View more Comments</a>
+            </td>                        
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="margin-top:43px;">
+            <tr style="font-family:Arial, Helvetica, sans-serif; font-size:11px; text-align:center; ">
+            <td style=" color:#a4a4a4;">You are receiving this mail, as you have subscribed to updates for the Project  <a href="$unsubscribeLink"  target="_blank" style="color:#5a60cf;">Unsubscribe Me</a>
+            </td>                        
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        <!-- mobile banner start -->
+		 <tr>
+                <td>
+                <table border="0" cellspacing="0" cellpadding="0" style="margin-top:40px;margin-left: 30px;">
+                  <tr>
+                    <td valign="top" style="padding-right:13px;"><img src="http://static.magicbricks.com/images/iconMobiles.jpg" width="62" height="50" alt="Mobile apps" /></td>
+                    <td valign="top">
+                    <p style="margin:0 0 3px; font-size:16px;"><font style="color:#e96100;">New! </font>Free Magicbricks Mobile App for Your Smart Phone</p>
+                    <p style="margin:0 0 3px;">Search properties on the Go with MagicBricks Apps</p>
+                    <p style="margin:0 0 3px; font-weight:bold;">Download: 
+                    	<a href="http://www.magicbricks.com/bricks/campaign.html?pageName=https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks&campaignCode=alerts_mobileappdownload&referrer=utm_source%3Dmobile_alerts"  target = "_blank" style="color:#1e54c2;">Android App</a> 
+                    	<a href="http://www.magicbricks.com/bricks/campaign.html?pageName=https://itunes.apple.com/us/app/magicbricks/id486328406?ls=1&mt=8&campaignCode=alerts_mobileappdownload&referrer=utm_source%3Dmobile_alerts" target="_blank" style="color:#1e54c2; padding:0 7px;">iphone App</a> 
+                    	<a href="http://www.magicbricks.com/bricks/campaign.html?pageName=http://www.windowsphone.com/en-us/store/app/magicbricks/73b61137-0b0b-4c96-8ea3-5ced23e2b5d9&campaignCode=alerts_mobileappdownload&referrer=utm_source%3Dmobile_alerts" target= "_blank" style="color:#1e54c2;">Windows App</a></p>
+                    </td>
+                  </tr>
+                </table>
+
+                </td>
+        </tr>
+        <tr>
+              <td style="padding:5px 0 0px 30px; font-family:Tahoma; color:#323030;">Your Trusted Partner<br />
+                <a href="http://www.magicbricks.com" target="_blank" style="color:#323030;">www.magicbricks.com</a>
+                <p style="color:#323030; margin-bottom:0px;">
+                For Feedback <a href="$feedBackUrl" target="_blank" style="color:#0516c2;">click here</a><br />
+				Call: <font style="color:#0516c2;">0124-4869300</font> (9am - 6pm All days)
+				</p>
+              </td>
+        </tr>
+        
+        <!-- mobile banner end -->
+        
+        </table>
+    	<!-- main table 3 ends -->           
+        </td>
+        </tr>
+    
+    <!-- main table 2 ends --> 
+        <tr style="font-family:Arial, Helvetica, sans-serif;">
+    	<td>
+            <table align="center" width="100%" style="width:595px;">
+            <tr>
+            <td style=" font-size:12px; color:#757575; padding:10px 0px 0px; margin-left:0px; font-family:Arial, Helvetica, sans-serif;">
+            All trademarks, logos and names are properties of their respective owners. All Rights Reserved.
+            <br />
+            &copy; Copyright 2015 Times Business Solutions Limited. <a href="http://property.magicbricks.com/terms/terms.html" target="_blank" style="color:#0516c2"">Terms of Use</a>            
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+</table>
+<!-- main table 1 ends --> 
+ <img src="http://www.magicbricks.com/bricks/campaign.html?pageName=http://property.magicbricks.com/microsite/images/spacer.gif&campaignCode=dailydiscussionmailer"/>
+
+
+</body>
+</html>
